@@ -14,7 +14,7 @@ The **scope of the present project** is to illustrate **how to recover a binary 
 
 **Mathematical Model**
 
-## 1. how can we generate data:
+## 1. How can we generate data:
 
 Let:
 
@@ -39,7 +39,8 @@ The maximum likelihood estimate $ \hat{\theta} $ is given by the value of $ \the
 
 $\mathcal{L}(X, y; \theta) = \frac{\exp \left\{-\frac{1}{2} (y - X\theta)^T (y - X\theta)\right\}}{(2\pi)^{m/2}}$
 
-which is equivalent to minimizing the function $\log L(X, y; \theta) = -\frac{1}{2} (y - X\theta)^T (y - X\theta) - \frac{m}{2} \log(2\pi)
+which is equivalent to minimizing the function 
+$\log L(X, y; \theta) = -\frac{1}{2} (y - X\theta)^T (y - X\theta) - \frac{m}{2} \log(2\pi)
 $
 
 
