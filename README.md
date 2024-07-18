@@ -6,7 +6,7 @@ This is my final project for the Probability course, University of Verona, Acade
 
 -------------------------------------------------------------------
 
-The **scope of the present project** is to illustrate **how to recover a binary signal from noisy observations using Markov Chain Monte Carlo techniques, Metropolis-Hastings Algorithm. **
+The **scope of the present project** is to illustrate **how to recover a binary signal from noisy observations using Markov Chain Monte Carlo techniques, Metropolis-Hastings Algorithm.**
 
 
 # **Starting Point** 
@@ -55,7 +55,7 @@ $\pi_{\beta}(\theta)$ is a probability distribution over the possible states $\t
 
 * **States**: Each state represents a possible configuration of the vector $\theta$.
 
-* **Convergence**: After a sufficient number of iterations, the chain converges to the maximum likelihood distribution, MLE $\hat{\theta}$.
+* **Convergence**: After a sufficient number of iterations, the chain converges to the maximum likelihood distribution, MLE.
 
 
 **Algorithm procedures**
@@ -63,6 +63,10 @@ $\pi_{\beta}(\theta)$ is a probability distribution over the possible states $\t
 1. Initializing with a random initial configuration of the vector $\theta$
 2. Proposing a new vector $\theta^*$
 3. Accept $\theta^*$ with a probability depending on $\mathcal{H}(X, y; \theta)$
+
+**Results**
+
+All results and graphical representations are included and explaned in the project.
 
 
 
