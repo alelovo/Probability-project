@@ -51,6 +51,18 @@ $\pi_{\beta}(\theta) = \frac{e^{-\beta H(X;y;\theta)}}{Z_{\beta}}, \quad \text{w
 
 $\pi_{\beta}(\theta)$ is a probability distribution over the possible states $\theta$ in your state space $\Theta$.
 
+**The structure of the Markov chain we obtain with the Metropolis-Hastings algorithm is characterized by:**
+
+* **States**: Each state represents a possible configuration of the vector $\theta$.
+
+* **Convergence**: After a sufficient number of iterations, the chain converges to the maximum likelihood distribution, MLE $\hat{\theta}$.
+
+
+**Algorithm procedures**
+
+1. Initializing with a random initial configuration of the vector $\theta$
+2. Proposing a new vector $\theta^*$
+3. Accept $\theta^*$ with a probability depending on $\mathcal{H}(X, y; \theta)$
 
 
 
