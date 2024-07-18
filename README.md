@@ -35,7 +35,8 @@ $\theta$ represents a binary signal that we want to transmit or recover. The mat
 
 So we have to find the **vector $\theta$ that maximizes the likelihood of the observations $y$.**
 
-The maximum likelihood estimate $ \hat{\theta} $ is given by the value of $ \theta $ that maximizes the likelihood function:
+The maximum likelihood estimate
+$ \hat{\theta} $ is given by the value of $ \theta $ that maximizes the likelihood function:
 
 $\mathcal{L}(X, y; \theta) = \frac{\exp \left\{-\frac{1}{2} (y - X\theta)^T (y - X\theta)\right\}}{(2\pi)^{m/2}}$
 
@@ -44,7 +45,7 @@ $\log L(X, y; \theta) = -\frac{1}{2} (y - X\theta)^T (y - X\theta) - \frac{m}{2}
 $
 
 
-##3. Metropolis-Hastings Algorithm
+## 3. Metropolis-Hastings Algorithm
 
 Why we use it in this problem ?
 
@@ -83,7 +84,7 @@ $$
 
 **Why we use the MSE in this problem?**
 
-* **PERFORMANCE EVALUATION**: how well the estimated $\theta_{est} $ vector approximates the true $\theta_{true}$ vector.
+* **PERFORMANCE EVALUATION**: how well the estimated $\theta_{est}$ vector approximates the true $\theta_{true}$ vector.
 
 * **MEASURE ACCURACY**: provides a single numerical value representing the sum of the squared deviations of the estimates from the true values. Smaller MSE values indicate that the estimated vector is closer to the true vector, meaning the algorithm performed well.
 
