@@ -29,13 +29,13 @@ we can see as:
 
 $\theta$ represents a binary signal that we want to transmit or recover. The matrix $\mathbf{X}$ could represent a sensor system that detects the signal, while $\boldsymbol{\xi}$ represents the noise that inevitably introduces itself into the measurement process. The result $\mathbf{y}$ is therefore what the sensors detect, a mix of the true signal and the noise.
 
-**The objective is to estimate a binary parameter vector $\theta$ from noisy observations $\y$.**
+**The objective is to estimate a binary parameter vector $\theta$ from noisy observations $y$.**
 
 ## **Maximum likelihood estimation**
 
 "It provides a measure of the plausibility of each parameter value, given the observed sample, and takes higher values for more plausible parameter values."
 
-So we have to find the **vector $\theta$ that maximizes the likelihood of the observations $\y$.**
+So we have to find the **vector $\theta$ that maximizes the likelihood of the observations $y$.**
 
 $\mathcal{L}(X, y; \theta) = \frac{\exp \left\{-\frac{1}{2} (y - X\theta)^T (y - X\theta)\right\}}{(2\pi)^{m/2}}$
 
