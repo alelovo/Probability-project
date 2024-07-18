@@ -37,21 +37,17 @@ $\theta$ represents a binary signal that we want to transmit or recover. The mat
 
 So we have to find the **vector $\theta$ that maximizes the likelihood of the observations $y$.**
 
-$\mathcal{L}(X, y; \theta) = \frac{\exp \left\{-\frac{1}{2} (y - X\theta)^T (y - X\theta)\right\}}{(2\pi)^{m/2}}$
-
-which is equivalent to minimizing the function 
-$\log L(X, y; \theta) = -\frac{1}{2} (y - X\theta)^T (y - X\theta) - \frac{m}{2} \log(2\pi)
-$
+$\mathcal{H}(X, y; \theta) = (y - X\theta)^T (y - X\theta)$
 
 ## **Metropolis-Hastings Algorithm**
 
 Why we use it in this problem ?
 
-is used to sample from a complex probability distribution, in this case, to find the maximum likelihood estimator $\hat{\theta}$. This **method is useful when the parameter space is large** ($\Theta = \{0,1\}^d$), and the objective function (the likelihood function) is difficult to optimize directly.
+is used to sample from a complex probability distribution, in this case, to find the maximum likelihood estimator. This **method is useful when the parameter space is large**, and the objective function (the likelihood function) is difficult to optimize directly.
 
-The stationary distribution $ \pi_{\beta}(\theta) $ is defined as:
+The stationary distribution $\pi_{\beta}(\theta)$ is defined as:
 
-$ \pi_{\beta}(\theta) = \frac{e^{-\beta H(X;y;\theta)}}{Z_{\beta}}, \quad \text{with} \quad Z_{\beta} = \sum_{\theta \in \Theta} e^{-\beta H(X;y;\theta)}$
+$\pi_{\beta}(\theta) = \frac{e^{-\beta H(X;y;\theta)}}{Z_{\beta}}, \quad \text{with} \quad Z_{\beta} = \sum_{\theta \in \Theta} e^{-\beta H(X;y;\theta)}$
 
 $\pi_{\beta}(\theta)$ is a probability distribution over the possible states $\theta$ in your state space $\Theta$.
 
